@@ -1,8 +1,9 @@
 body{
-    background-image: url("/mypage/yonanland.github.io/grade_review/image/background.png");
-    font-size: 1.5em;
+    background-image: url("image/background.png");
+    font-size: 15px;
     color: rgb(0, 0, 0);
-    
+    font-family: "Verdana", "Geneva", sans-serif;
+    padding-left: 1em;
     }
 
  .fieldBox {
@@ -11,11 +12,12 @@ body{
 
       h1{
          color: rgb(12, 98, 138);
+         font-family: 'Trebuchet MS', sans-serif;
       }
 
       .info{
         font-family:  'Lucida Sans', Arial, sans-serif;
-        font-size: 21px;
+        font-size: 33px;
       }
       .urEntry{
         color: rgb(112, 47, 21);
@@ -35,6 +37,7 @@ body{
 }
 
 input[type="submit"] {
+  margin-top:10px ;
 	background-color:rgb(201, 224, 213);
 	font-size: 18px;
 	font-weight: bold;
@@ -42,31 +45,12 @@ input[type="submit"] {
     
 }
 
-/* 
-
-* {
-	font-size: 12pt;
-	font-family: "Verdana", "Geneva";
+.icon-home{
+  width: 35px;
+  border: 2px solid rgb(156, 120, 120);
+    border-radius: 8px;
 }
 
-body {
-	background-color:gray;
-	padding-left: 1em;
+.icon-home:hover {
+  background-color: rgb(211, 211, 202);
 }
-
-fieldset {
-	background-color:silver;
-	border: 2px outset gray;
-	border-radius: 10px;
-}
-
-legend {
-	background-color: white;
-	border: 2px outset gray;
-	padding: 0.2em;
-}
-
-h1 {
-	font-weight: bold;
-
-} */
