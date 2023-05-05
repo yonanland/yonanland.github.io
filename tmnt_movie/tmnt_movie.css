@@ -131,3 +131,20 @@ body {
     list-style: none;
   }
   
+  .icon-home{
+    width: 35px;
+    border: 2px solid rgb(156, 120, 120);
+      border-radius: 8px;
+  }
+  
+  .icon-home:hover {
+    background-color: rgb(211, 211, 202);
+  }
+  
+  .jumpTop{   
+    border: 2px solid rgb(156, 120, 120);
+      border-radius: 8px;
+      /* border-top-right-radius: 50px; */
+    margin-top: 10px;
+    text-decoration: none;
+   }
