@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="/mypage/yonanland.github.io/grade_review/gradestyle.css"
+      href="/grade_review/gradestyle.css"
     />
     <title>Retrieve Grade</title>
   </head>
@@ -15,39 +15,43 @@
   <body>
     <h1>Retrieve Your Grade</h1>
     <form action="http://mumstudents.org/params.php">
-    <div class="info">
-      <label for="fname" name="fname">First Name</label>
-      <input
-        type="text"
-        name="fname"
-        pattern="[A-Z]?[a-z]*"
-        title="Enter letters only!"
-      />
-      <br> <br>
+      <div class="info">
+        <label for="fname" name="fname">First Name</label>
+        <input
+         type="text"
+         name="fname"
+         pattern="[A-Z]?[a-z]*"
+         title="Enter letters only!"
+       />
+        <br> <br>
 
-      <label for="lname" name="lname">Last Name</label>
-      <input
-        type="text"
-        name="lname"
-        pattern="[A-Z]?[a-z]*"
-        title="Enter letters only!"
-      />
-      <br> <br>
-      <label for="ID" name="ID">Student ID</label>
-      <input type="text " id="ID" pattern="[0-9]+" title="Numbers Only" />
-      <br /> <br>
-    </div>
+        <label for="lname" name="lname">Last Name</label>
+        <input
+         type="text"
+         name="lname"
+         pattern="[A-Z]?[a-z]*"
+          title="Enter letters only!"
+        />
+        <br> <br>
 
-      <label for="course" name="course">Select Assignment</label>
-      <select name="course" id="corseName">
-        <option value="FPP">Lab 1</option>
-        <option value="MPP">Lab 2</option>
-        <option value="MPP">Home work 1</option>
-        <option value="WAP">Home work 2</option>
-        <option value="WAP">Lab 3</option>
-      </select>
-      <br />
-      <br />
+        <label for="ID" name="ID">Student ID</label>
+        <input type="text " id="ID" pattern="[0-9]+" title="Numbers Only" />
+        <br /> <br>
+      </div>
+
+      <div>
+        <label for="course" name="course">Select Assignment</label>
+        <select name="course" id="corseName">
+          <option value="FPP">Lab 1</option>
+          <option value="MPP">Lab 2</option>
+          <option value="MPP">Home work 1</option>
+          <option value="WAP">Home work 2</option>
+          <option value="WAP">Lab 3</option>
+        </select>
+         <br />
+         <br />
+      </div>
+
     </form>
     <br />
 
@@ -82,51 +86,50 @@
           <br>
         </div>
 
-          <div>
-            <label for="grade">Get Grade! </label>
+        <div>
+          <label for="grade">Get Grade! </label>
             <br>
             I AM ENTERING THE CORRECT INFORMATION
             <input name="notlying" type="checkbox" value="yes" /></label>
             <br />
             <label>
             I AM ONLY CHECKING ONLY MY OWN GRADES
-            <input name="yourgrade" type="checkbox" value="yes" /></label>
-          </div>
+          <input name="yourgrade" type="checkbox" value="yes" /></label>
+        </div>
 
         
         <input type="submit" value="submit" /> <br>
         <br>
+        <hr> 
 
         <div class="icon-homepage">
-          <a href="/mypage/yonanland.github.io/index/index.html"> 
-            <img  src="image/icon-home.svg" alt=""> </a>
+          <a class="bottomLinks" href="/index/index.html">
+            <img class="icon-home" src="image/icon-home.svg" alt="A home icon"
+          /></a>
         </div>
 
     
 
-    <div class="val">
-      <a href="http://validator.w3.org/check/?url=https://yonanland.github.io">
-        <img
-          src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png"
-          alt="html validator"
-        />
-      </a>
+        <div class="val">
+          <a href="http://validator.w3.org/check/?url=https://yonanland.github.io">
+           <img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png"
+              alt="html validator"
+            />
+          </a>
 
-      <a
-        href="https://jigsaw.w3.org/css-validator/validator?uri=https://yonanland.github.io/"
-        style="text-decoration: none"
-      >
-        <img
-          style="border: 0; width: 88px; height: 31px"
-          src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-          alt="Valid CSS!"
-        />
-      </a>
-    </div>
-
-  </div>
-</form> 
-<br>
+          <a
+             href="https://jigsaw.w3.org/css-validator/validator?uri=https://yonanland.github.io/"
+              style="text-decoration: none"
+            >
+            <img style="border: 0; width: 88px; height: 31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="Valid CSS!"
+            />
+          </a>
+        </div>
+      </div>
+    </form> 
+      <br>
 
     <div style="margin-top: auto;"></div></style></div>
    </body>
