@@ -1,8 +1,8 @@
 body{
-	background-image: url("/mypage/yonanland.github.io/pie/image/silverware.jpg");
+	background-image: url("image/silverware.jpg");
     text-decoration: none 8pt;
     font-family: "Verdana";
-    margin: 0px;
+    margin-left: 8px;
 	}
 
 h2{
@@ -44,14 +44,21 @@ a{
 }
 .copy{
 	text-align: right;
+	color: #f0f0f0;
 }
 blockquote{
 	background-color: rgb(255,255,168);
 	font-style: italic;
 }
 .bottomLinks {
-    color: rgb(118, 105, 203);
-    text-decoration: none;   
+    color: rgb(132, 121, 202);
+    text-decoration: none;
+}
+.jumpTop{   
+	border: 2px solid rgb(156, 120, 120);
+    border-radius: 8px;
+    /* border-top-right-radius: 50px; */
+	margin-top: 10px;
  }
 .pie{
 	list-style-image: url("./images/pie_icon.gif");
@@ -59,4 +66,18 @@ blockquote{
 
 .hrefLine{
 	text-decoration: none;
+}
+
+.icon-home{
+	width: 35px;
+	border: 2px solid rgb(156, 120, 120);
+    border-radius: 8px;
+}
+
+.icon-home:hover {
+	background-color: rgb(211, 211, 202);
+}
+
+.footPage{
+	background-color: rgb(20, 55, 95);
 }
