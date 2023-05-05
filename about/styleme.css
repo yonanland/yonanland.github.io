@@ -11,7 +11,7 @@
 
 }
 body{
-    background-image: url("/mypage/yonanland.github.io/about/image/background.png")
+    background-image: url("image/background.png")
 }
 
 .images{
@@ -68,17 +68,23 @@ body{
     font-size: 20px;
     font-family: "Tahoma";
 }
+.bio{
+    color: #014101;
+    word-spacing: 2px;
+    font-family: 'Arial Narrow Bold';
+    font-size: 24px;
+}
 
 .note {
     color: rgb(1, 103, 69);
-   word-spacing: 2px;
+    word-spacing: 2px;
     font-family: 'Arial Narrow Bold';
-    font-size: 1.2em;
+    font-size: 19px;
   }
 
 
-.tcolor2{
-    color: rgb(255, 255, 255);
+.modeColor{
+    color: rgb(1, 103, 69);
     font-size: 20px;
     font-family: "Tahoma";
 }
