@@ -1,0 +1,108 @@
+body {
+	background-color: rgb(147, 147, 115);
+    /* background-image: url(image/background.png); */
+	padding-left: 1em;
+}
+
+* {
+	font-size: 12pt;
+	font-family: "Verdana", "Geneva";
+}
+
+a {
+	 color: rgb(197, 111, 111); 
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: rgb(122, 122, 116);
+}
+
+a img {
+	border: none;
+}
+
+body > div, form {
+	overflow: hidden;
+	width: 35em;
+}
+
+div {
+	overflow: hidden;
+}
+
+/* form styles */
+fieldset {
+    display: flex;
+    flex-direction: row;
+	background-color: #E0E0FF;
+	border: 2px outset rgb(154, 250, 75);
+	border-radius: 10px;
+}
+
+
+header {
+	margin-bottom: 2em;
+    
+}
+
+input{
+    margin-bottom: 4px;
+}
+
+input[type="submit"] {
+	background-color: #FAA;
+	font-size: 120%;
+	font-weight: bold;
+    width: 100px;  
+}
+
+legend {
+	background-color: white;
+	border: 2px outset gray;
+	padding: 0.2em;
+}
+
+label{
+    font-weight: bold;
+    width:180px;
+    clear:left;
+    text-align:left;
+    padding-right:10px;
+    margin-bottom: 10px;
+    
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    margin-right:   40px;
+    float: left;
+}
+#log{
+    width: 15%;
+    height: auto;
+    border-radius: 9%; 
+    border: 2px outset rgb(154, 250, 75); 
+}
+
+.copy{
+	text-align: center;
+    font-family: "Lucida Sans Unicode", Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+.val{
+	text-align: right;
+}
+
+.type{
+    color: red;
+}
+
+.bottomWords{
+    font-family: "Lucida Sans Unicode", Tahoma, sans-serif;
+    color: rgb(85, 48, 172);
+}
+    
+

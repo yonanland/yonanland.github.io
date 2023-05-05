@@ -1,0 +1,103 @@
+.relaxedLion{
+    width: 180px;
+    border-radius: 10%;
+    object-fit: cover;
+
+}
+.AlertfullTiger{
+    width: 220px;
+    border-radius: 10%;
+    object-fit: cover;      
+
+}
+body{
+    background-image: url("/mypage/yonanland.github.io/about/image/background.png")
+}
+
+.images{
+    display: flex;
+    gap: 10px;
+   /* justify-content: center; */
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.homePage {
+    color: rgb(118, 105, 203);
+    text-decoration: none;
+ }
+
+.val{
+	text-align: center;
+}
+
+/* .m1{
+    color: rgb(233, 218, 17);
+
+} */
+
+.title1{
+    color: rgb(30, 30, 241);
+    font-size: 40px;
+    font-family: 'Trebuchet MS'; 
+}
+.title1:hover {
+    color: rgb(0, 128, 0);
+}
+
+.imdbs{
+    /* color: rgba(35, 50, 50, 0.644); */
+    background-color: rgba(219, 235, 126, 0.644);
+    font-size: 7px;
+    font-family: "Tahoma", sans-serif;
+}
+
+.title2{
+    color: rgb(74, 3, 112);
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    
+}
+
+.tcolor1{
+    color: rgb(85, 2, 94);
+    font-size: 20px;
+    font-family: "Tahoma";
+}
+
+.note {
+    color: rgb(1, 103, 69);
+   word-spacing: 2px;
+    font-family: 'Arial Narrow Bold';
+    font-size: 1.2em;
+  }
+
+
+.tcolor2{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: "Tahoma";
+}
+
+.points{
+    color: rgb(0, 0, 0);
+    font-size:1.4em;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font:2em;
+}
+
+ p:first-letter {
+    font-size: 3em;
+    font-family: 'Trebuchet MS'; 
+    margin-top: -.32em;
+    padding: 2px;
+    margin-right: 4px;
+  }
+  
+
+
+ 

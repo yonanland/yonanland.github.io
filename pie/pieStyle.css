@@ -1,0 +1,62 @@
+body{
+	background-image: url("/mypage/yonanland.github.io/pie/image/silverware.jpg");
+    text-decoration: none 8pt;
+    font-family: "Verdana";
+    margin: 0px;
+	}
+
+h2{
+	color: rgb(164,164,0);
+	background-color: rgb(240,240,240);
+	font-family: "Lucida Sans Unicode", Tahoma, sans-serif;
+	text-decoration: underline;
+	font-weight: normal;
+	font-size: 18pt;
+	letter-spacing: 0.22em;
+	display: inline-flex;
+}
+.menu{
+	list-style-type: none;
+}
+.home{
+	vertical-align: middle;
+}
+.main{
+	text-align: center;
+	font-size: 22pt;
+	font-weight: bold;
+    font-family: "Lucida Sans Unicode", Tahoma, sans-serif;
+	background-color:#f0f0f0 ;
+	color: #a4a400;
+text-decoration: underline;
+}
+
+.somFont{
+	font-size: 18px;
+}
+
+a{
+	color: rgb(164,164,0);
+}
+
+.val{
+	text-align: right;
+}
+.copy{
+	text-align: right;
+}
+blockquote{
+	background-color: rgb(255,255,168);
+	font-style: italic;
+}
+.bottomLinks {
+    color: rgb(118, 105, 203);
+    text-decoration: none;   
+ }
+.pie{
+	list-style-image: url("./images/pie_icon.gif");
+}
+
+.hrefLine{
+	text-decoration: none;
+}

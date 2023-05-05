@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="referrer" content="origin" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/mypage/yonanland.github.io/grade_review/gradestyle.css"
+    />
+    <title>Retrieve Grade</title>
+  </head>
+
+  <body>
+    <h1>Retrieve Your Grade</h1>
+    <form action="http://mumstudents.org/params.php">
+    <div class="info">
+      <label for="fname" name="fname">First Name</label>
+      <input
+        type="text"
+        name="fname"
+        pattern="[A-Z]?[a-z]*"
+        title="Enter letters only!"
+      />
+      <br> <br>
+
+      <label for="lname" name="lname">Last Name</label>
+      <input
+        type="text"
+        name="lname"
+        pattern="[A-Z]?[a-z]*"
+        title="Enter letters only!"
+      />
+      <br> <br>
+      <label for="ID" name="ID">Student ID</label>
+      <input type="text " id="ID" pattern="[0-9]+" title="Numbers Only" />
+      <br /> <br>
+    </div>
+
+      <label for="course" name="course">Select Assignment</label>
+      <select name="course" id="corseName">
+        <option value="FPP">Lab 1</option>
+        <option value="MPP">Lab 2</option>
+        <option value="MPP">Home work 1</option>
+        <option value="WAP">Home work 2</option>
+        <option value="WAP">Lab 3</option>
+      </select>
+      <br />
+      <br />
+    </form>
+    <br />
+
+    <form action="postToServer">
+      <div class="fieldBox">
+        <div class="urEntry">
+          <fieldset>
+            <legend>Please select your entry</legend>
+            <input type="radio" id="entry4" name="entry" value="February" />
+            <label for="entry">February</label>
+
+            <input type="radio" id="entry1" name="entry" value="May" />
+            <label for="entry">May</label>
+
+            <input type="radio" id="entry2" name="entry" value="August" />
+            <label for="entry">August</label>
+
+            <input type="radio" id="entry3" name="entry" value="October" />
+            <label for="entry">October</label>
+
+            <input type="radio" id="entry4" name="entry" value="November" />
+            <label for="entry">November</label>
+          </fieldset>
+        </div>
+
+        <div class="confirma">
+          <p>Are you only looking your own grade</p>
+          <input type="radio" id="yes" name="notlying" value="Yes" />
+          <label for="entry">Yes</label>
+          <input type="radio" id="No" name="notlying" value="No" />
+          <label for="entry">No</label><br />
+          <br>
+        </div>
+
+          <div>
+            <label for="grade">Get Grade! </label>
+            <br>
+            I AM ENTERING THE CORRECT INFORMATION
+            <input name="notlying" type="checkbox" value="yes" /></label>
+            <br />
+            <label>
+            I AM ONLY CHECKING ONLY MY OWN GRADES
+            <input name="yourgrade" type="checkbox" value="yes" /></label>
+          </div>
+
+        
+        <input type="submit" value="submit" /> <br>
+        <br>
+
+        <div class="icon-homepage">
+          <a href="/mypage/yonanland.github.io/index/index.html"> 
+            <img  src="image/icon-home.svg" alt=""> </a>
+        </div>
+
+    
+
+    <div class="val">
+      <a href="http://validator.w3.org/check/?url=https://yonanland.github.io">
+        <img
+          src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png"
+          alt="html validator"
+        />
+      </a>
+
+      <a
+        href="https://jigsaw.w3.org/css-validator/validator?uri=https://yonanland.github.io/"
+        style="text-decoration: none"
+      >
+        <img
+          style="border: 0; width: 88px; height: 31px"
+          src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+          alt="Valid CSS!"
+        />
+      </a>
+    </div>
+
+  </div>
+</form> 
+<br>
+
+    <div style="margin-top: auto;"></div></style></div>
+   </body>
+</html>
+
