@@ -39,11 +39,15 @@ a{
 	color: rgb(164,164,0);
 }
 
-.val{
-	text-align: right;
-}
+.val{ 
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	opacity: 0.7;
+  }
+
 .copy{
-	text-align: right;
+	text-align: center;
 	color: #f0f0f0;
 }
 blockquote{

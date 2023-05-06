@@ -1,61 +1,67 @@
-      body{
-        background-image: url("image/background.png");
-      }
-      /* body{
-        background-image: url("image/US-WashingtonDC.jpg");
-      } */
+body{
+  background-image: url("image/background.png");
+}
+/* body{
+  background-image: url("image/US-WashingtonDC.jpg");
+} */
 
-      .profile {
-        width: 250px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-top: 25px;
-        
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-      }
+.profile {
+  width: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 25px;
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
-      .labsItem{
-        text-decoration: none;
-        font-size: 20px;
-        
-      }
-      .n{
-        text-decoration: none;
-      }
-      .username {
-            text-align: left;
-            font-size: 36pt;
-            font-family: 'Bradley Hand ITC', Consolas;
-            /* background-color: rgb(165, 173, 132); */
-            color: #430dc9;
-            text-decoration: none;
-            display: inline-flex;
-      }
-      .end {
-        color: rgb(118, 140, 165);
-        font-family: "Lucida Sans Unicode", Tahoma, sans-serif;
-        font-weight: bold;
-        font-size: 18pt;
-        letter-spacing: 0.22em;
-      }
-      .val{ 
-        display: flex;
-        gap: 10px;
-        justify-content: center;
-    }
- h3{
-    color: rgba(52, 77, 158, 0.884);
-    font-size: 15pt;  
-    font-weight: bold;
+.labsItem{
+  text-decoration: none;
+  font-size: 20px;
+  
+}
 
- }
-    blockquote{
-        background-color: rgb(165, 173, 132);
-        display: inline-flex;
-        font-style: italic;
-        font-family: Cambria;
-        font-size: 20px;
-    
-    }
+.n{
+  text-decoration: none;
+}
+
+.username {
+  text-align: left;
+  font-size: 36pt;
+  font-family: 'Bradley Hand ITC', Consolas;
+  /* background-color: rgb(165, 173, 132); */
+  color: #430dc9;
+  text-decoration: none;
+  display: inline-flex;
+}
+
+.end {
+  color: rgb(118, 140, 165);
+  font-family: "Lucida Sans Unicode", Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 18pt;
+  letter-spacing: 0.22em;
+}
+
+.val{ 
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  opacity: 0.7;
+}
+
+h3{
+color: rgba(52, 77, 158, 0.884);
+font-size: 15pt;  
+font-weight: bold;
+}
+
+blockquote{
+  background-color: rgb(165, 173, 132);
+  display: inline-flex;
+  font-style: italic;
+  font-family: Cambria;
+  font-size: 20px;
+
+}

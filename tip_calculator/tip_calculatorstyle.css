@@ -1,0 +1,49 @@
+/* body{
+    margin: 2% 20%;
+} */
+
+body {
+    background-image: url("image/background.png");
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    font-family: "Verdana", "Geneva", sans-serif;
+    padding-left: 1em;
+  }
+  
+  fieldBox {
+    float: right;
+  }
+  
+  .cal {
+    width: 80px;
+  }
+  
+  .headTitle {
+    font-size: 40px;
+    font-family: "Courier New", Courier, monospace;
+  }
+  
+  .total {
+    font-size: 40px;
+    font-family: "Verdana", Courier, monospace;
+    font: 900;
+    text-shadow: 2px;
+  }
+  
+  body,
+  input,
+  button {
+    font-family: "Century Gothic", sans-serif;
+    font-size: 20pt;
+  }
+  
+  div {
+    margin: 0.5em;
+  }
+  .val{ 
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    opacity: 0.7;
+  }
+  
