@@ -1,5 +1,6 @@
 body{
-  background-image: url("image/background.png");
+  /* background-image: url("image/background.png"); */
+  background-color: rgb(57, 143, 158);
   font-size: 15px;
   color: rgb(0, 0, 0);
   font-family: "Verdana", "Geneva", sans-serif;
@@ -23,6 +24,7 @@ h1{
 .urEntry{
   color: rgb(112, 47, 21);
   font-family: cursive;
+  
 }
 
 .confirma{

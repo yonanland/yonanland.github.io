@@ -43,7 +43,7 @@ body {
   .val{ 
     display: flex;
     gap: 10px;
-    justify-content: center;
+    justify-content: left;
     opacity: 0.7;
   }
   
