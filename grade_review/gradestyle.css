@@ -1,6 +1,5 @@
 body{
-  /* background-image: url("image/background.png"); */
-  background-color: rgb(57, 143, 158);
+  background-image: url("image/background.png");
   font-size: 15px;
   color: rgb(0, 0, 0);
   font-family: "Verdana", "Geneva", sans-serif;
@@ -37,7 +36,7 @@ h1{
 }
 
 .val{
-	text-align: center;
+	text-align: left;
 }
 
 input[type="submit"] {

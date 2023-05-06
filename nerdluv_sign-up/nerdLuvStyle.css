@@ -1,6 +1,5 @@
 body {
-	background-color: rgb(147, 147, 115);
-    /* background-image: url(image/background.png); */
+    background-image: url(image/background.png);
 	padding-left: 1em;
 }
 
@@ -79,6 +78,7 @@ label{
     margin-right:   40px;
     float: left;
 }
+
 #log{
     width: 15%;
     height: auto;
