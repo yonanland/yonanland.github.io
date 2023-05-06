@@ -2,7 +2,7 @@
     margin: 2% 20%;
 } */
 
-body{
+body {
   background-image: url("image/background.png");
   font-size: 15px;
   color: rgb(0, 0, 0);
@@ -11,28 +11,29 @@ body{
 }
 
 fieldBox {
-  float:right;
+  float: right;
 }
 
-.cal{
- width: 80px;
- 
+.cal {
+  width: 80px;
 }
 
-.headTitle{
+.headTitle {
   font-size: 40px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
-.total{
+.total {
   font-size: 40px;
   font-family: "Verdana", Courier, monospace;
   font: 900;
   text-shadow: 2px;
 }
-    
-body, input, button {
-  font-family: "Century Gothic",sans-serif;
+
+body,
+input,
+button {
+  font-family: "Century Gothic", sans-serif;
   font-size: 20pt;
 }
 
