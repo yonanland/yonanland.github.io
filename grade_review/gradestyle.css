@@ -1,36 +1,37 @@
 body{
-    background-image: url("image/background.png");
-    font-size: 15px;
-    color: rgb(0, 0, 0);
-    font-family: "Verdana", "Geneva", sans-serif;
-    padding-left: 1em;
-    }
+  background-image: url("image/background.png");
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  font-family: "Verdana", "Geneva", sans-serif;
+  padding-left: 1em;
+}
 
- .fieldBox {
-        float:left;
-    }
+.fieldBox {
+  float:left;
+}
 
-      h1{
-         color: rgb(12, 98, 138);
-         font-family: 'Trebuchet MS', sans-serif;
-      }
+h1{
+  color: rgb(12, 98, 138);
+  font-family: 'Trebuchet MS', sans-serif;
+}
 
-      .info{
-        font-family:  'Lucida Sans', Arial, sans-serif;
-        font-size: 33px;
-      }
-      .urEntry{
-        color: rgb(112, 47, 21);
-        font-family: cursive;
+.info{
+  font-family:  'Lucida Sans', Arial, sans-serif;
+  font-size: 33px;
+}
 
-      }
-      .confirma{
-        color:rgb(112, 47, 21);
-      }
+.urEntry{
+  color: rgb(112, 47, 21);
+  font-family: cursive;
+}
+
+.confirma{
+  color:rgb(112, 47, 21);
+}
       
 .icon-homepage{
-    width: 30px;
-    border-radius: auto;
+  width: 30px;
+  border-radius: auto;
 }
 
 .val{
@@ -48,7 +49,7 @@ input[type="submit"] {
 .icon-home{
   width: 35px;
   border: 2px solid rgb(156, 120, 120);
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 .icon-home:hover {

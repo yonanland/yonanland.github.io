@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tasklist.css" />
+    <title>Task List</title>
+  </head>
+    <body>
+        <div class="fieldBox"></div>
+            <div class="first">
+            <h1 style="margin-bottom: 0">Task List</h1>
+
+            <div class="left">
+                <h3>Task</h3>
+
+                <input type="text" id="tskin" /><br /><br />
+                <button type="button" onclick="addTask()">Add Task</button><br /><br />
+                <button onclick="clearTask();">Clear Tasks</button>
+            </div>
+
+            <div class="right">
+                <h3 style="margin-bottom: 0">Task List</h3>
+                <textarea id="tArea" rows="7" cols="35" placeholder=""></textarea>
+            </div>
+            </div>
+
+            <script>
+            document.getElementById("tArea").innerHTML =
+                localStorage.getItem("hello");
+
+            function addTask() {
+                let x = document.getElementById("tskin").value;
+                document.getElementById("tArea").value += x;
+                document.getElementById("tskin").value = "";
+                localStorage.setItem("hello", document.getElementById("tArea").value);
+            }
+            function clearTask() {
+                document.getElementById("tArea").value = "";
+            }
+            </script>             
+            <br />
+            <hr /> 
+            <br>
+        </div> 
+        
+
+        <div>
+            <a href="/yonanland.github.io/index/index.html"> <img src="image/icon-home.svg" alt="icon-homepage"></a>
+        </div>
+
+        <div class="val">
+            <a
+                href="http://validator.w3.org/check/?url=https://yonanland.github.io/index"
+                target="_blank"
+            >
+                <img
+                src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png"
+                alt="html validator"
+            /></a>
+            <a
+                href="https://jigsaw.w3.org/css-validator/validator?uri=https://yonanland.github.io/index"
+                target="_blank"
+            >
+                <img
+                src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!"
+            /></a> 
+            <br />
+        </div>
+  </body>
+</html>
