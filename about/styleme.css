@@ -113,6 +113,10 @@ body{
     padding: 2px;
     margin-right: 4px;
   }
+  
+  .bulletStyle{
+    list-style-type: square;
+  }
 
   .jumpTop{   
     border: 2px solid rgb(156, 120, 120);
@@ -121,6 +125,8 @@ body{
     margin-top: 10px;
     text-decoration: none;
    }
+
+   
   
 
 
