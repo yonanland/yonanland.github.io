@@ -8,16 +8,20 @@
     width: 220px;
     border-radius: 10%;
     object-fit: cover;      
+    
 
 }
 body{
     background-image: url("image/background.png")
 }
 
-.pady{
+.pady{    
     padding: 1px 5px 1px 20px;
     border: 2px dashed blue;
-    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: auto;
+    width: 80%
+
 }
 
 .images{
@@ -76,7 +80,6 @@ body{
     color: rgb(85, 2, 94);
     font-size: 15px;
     font-family: "Tahoma";
-    margin-top:5px ;
 }
 .bio{
     color: #014101;
