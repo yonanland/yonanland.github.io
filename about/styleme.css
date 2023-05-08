@@ -43,7 +43,7 @@ body{
 .title1{
     color: rgb(30, 30, 241);
     font-size: 40px;
-    font-family: 'Trebuchet MS'; 
+    font-family: Nyala;
 }
 .title1:hover {
     color: rgb(0, 128, 0);
@@ -58,40 +58,40 @@ body{
 
 .title2{
     color: rgb(74, 3, 112);
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Gill Sans', 'Gill Sans MT';
     
 }
 
 .tcolor1{
     color: rgb(85, 2, 94);
-    font-size: 20px;
+    font-size: 15px;
     font-family: "Tahoma";
 }
 .bio{
     color: #014101;
     word-spacing: 2px;
     font-family: 'Arial Narrow Bold';
-    font-size: 24px;
+    font-size: 16px;
 }
 
 .note {
     color: rgb(1, 103, 69);
     word-spacing: 2px;
     font-family: 'Arial Narrow Bold';
-    font-size: 19px;
+    font-size: 14px;
   }
 
 
 .modeColor{
     color: rgb(1, 103, 69);
-    font-size: 20px;
+    font-size: 15px;
     font-family: "Tahoma";
 }
 
 .points{
     color: rgb(0, 0, 0);
-    font-size:1.4em;
+    font-size:15px;
     font-family: Calibri, 'Trebuchet MS', sans-serif;
     font:2em;
 }
@@ -103,6 +103,14 @@ body{
     padding: 2px;
     margin-right: 4px;
   }
+
+  .jumpTop{   
+    border: 2px solid rgb(156, 120, 120);
+      border-radius: 8px;
+      /* border-top-right-radius: 50px; */
+    margin-top: 10px;
+    text-decoration: none;
+   }
   
 
 

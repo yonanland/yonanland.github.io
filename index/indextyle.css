@@ -96,3 +96,11 @@ blockquote{
   background-color: rgb(185, 170, 104) ;
   margin-left: auto;
 }
+
+.jumpTop{   
+  border: 2px solid rgb(156, 120, 120);
+    border-radius: 8px;
+    /* border-top-right-radius: 50px; */
+  margin-top: 10px;
+  text-decoration: none;
+ }
