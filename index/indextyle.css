@@ -1,24 +1,49 @@
 body{
   background-image: url("image/background.png");
 }
-/* body{
-  background-image: url("image/US-WashingtonDC.jpg");
-} */
+
 
 .profile {
-  width: 250px;
+  width: 350px;
   border-radius: 50%;
   object-fit: cover;
   margin-top: 25px;
-  
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  display: inline-block; /* Make the container fit the image */
+  box-shadow: 3px 3px 5px rgba(255, 248, 8, 0.904); /* Add a shadow effect */
 }
 
-.labsItem{
+.banner {
+  position: relative;
+  z-index: 1; /* set z-index to 1 so the banner appears above the body content */
+  object-fit: cover;
+  border: 4px solid #a5b6c5;
+}
+
+.banner::before {
+  content: "";
+  background-image: url('image/US-WashingtonDC.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8; /* adjust opacity as desired */
+  z-index: -1; /* set z-index to -1 so the banner appears behind the profile picture */
+}
+
+
+.bulletLinks{
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
+  margin-top: 0%;
+  margin-left: 50px;
+
   
 }
 
@@ -34,6 +59,9 @@ body{
   color: #430dc9;
   text-decoration: none;
   display: inline-flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+ 
 }
 
 .end {
@@ -51,7 +79,7 @@ body{
   opacity: 0.7;
 }
 
-h3{
+h3{ 
 color: rgba(52, 77, 158, 0.884);
 font-size: 15pt;  
 font-weight: bold;
@@ -63,6 +91,8 @@ blockquote{
   font-style: italic;
   font-family: Cambria;
   font-size: 18px;
-  
-
+}
+.footerr{
+  background-color: rgb(185, 170, 104) ;
+  margin-left: auto;
 }

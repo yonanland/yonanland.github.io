@@ -23,12 +23,13 @@ function bling() {
       textArea.style.fontWeight = "bold";
       textArea.style.color = "green";
       textArea.style.textDecoration = "underline";
-    //   document.body.style.backgroundImage = "url('https://media.giphy.com/media/3o7qE3vzVBKjhuHp0g/giphy.gif')";
+      document.body.style.backgroundImage =  "url('http://www.cs.washington.edu/education/courses/190m/CurrentQtr/labs/6/hundred-dollar-bill.jpg')";
+      // document.body.style.backgroundImage = "url('https://media.giphy.com/media/3o7qE3vzVBKjhuHp0g/giphy.gif')";
     } else {
       textArea.style.fontWeight = "normal";
       textArea.style.color = "inherit";
       textArea.style.textDecoration = "none";
-    //   document.body.style.backgroundImage = "none";
+      document.body.style.backgroundImage = "url('image/background.png')";
     }
 
 }
