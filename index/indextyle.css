@@ -4,10 +4,12 @@ body{
 
 
 .profile {
-  width: 350px;
+  width: 200px;
   border-radius: 50%;
   object-fit: cover;
-  margin-top: 25px;
+  margin-top: 55px;
+  margin-bottom: 55px;
+  margin-left: 15px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -24,15 +26,15 @@ body{
 }
 
 .banner::before {
-  content: "";
+  content: "DC";
   background-image: url('image/US-WashingtonDC.jpg');
-  background-size: cover;
-  background-position: center;
-  position: absolute;
+  background-size:cover ;
+  background-position: top;
+  position: absolute  ;
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 100%;
+  height: 105%;
   opacity: 0.8; /* adjust opacity as desired */
   z-index: -1; /* set z-index to -1 so the banner appears behind the profile picture */
 }
@@ -70,6 +72,7 @@ body{
   font-weight: bold;
   font-size: 18pt;
   letter-spacing: 0.22em;
+  margin-bottom: 1px;
 }
 
 .val{ 
@@ -92,15 +95,16 @@ blockquote{
   font-family: Cambria;
   font-size: 18px;
 }
-.footerr{
+.footBanner{
+  margin: -9px;
   background-color: rgb(185, 170, 104) ;
-  margin-left: auto;
 }
 
-.jumpTop{   
+.labsItem{   
   border: 2px solid rgb(156, 120, 120);
-    border-radius: 8px;
-    /* border-top-right-radius: 50px; */
+  border-radius: 8px;
   margin-top: 10px;
+  margin-left: 20px;
+  
   text-decoration: none;
  }
