@@ -129,6 +129,18 @@ body{
     text-decoration: none;
    }
 
+   .footBanner{
+    margin: -9px;
+    background-color: rgb(185, 170, 104) ;
+  }
+  
+  .hrr {
+    border: 2px solid rgb(150, 108, 56);
+    margin-left: -9px;
+    margin-right: -9px;
+    margin-bottom: 9px;
+  }
+
    
   
 

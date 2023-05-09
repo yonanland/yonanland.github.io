@@ -22,20 +22,21 @@ window.onload= function(){
     
     }());
   
-  
-    var createAcct= document.getElementById("createAcct");
-    createAcct.onclick= updateList;
+   // update the list in each click
+            // var createAcct= document.getElementById("createAcct");
+            // createAcct.onclick= updateList;
+    document.getElementById("createAcct").onclick = updateList;
     
-    function updateList(){
-  
-      var ac= bankingModule.account();
-      if (ac==null){
-        alert("Please enter account name and deposit ");
-        return;}
-  
-      accountInfoList[accountInfoList.length]=ac;
-      
+    function updateList(){  
+      var ac= bankingModule.account();  
+        if (ac==null){
+            alert("Please enter account name and deposit ");
+            return;
+        }
+       
+      accountInfoList[accountInfoList.length] = ac;
       showAccounts();
+      alert("Congratultion!! a new account has been created.");
   
     }
   
