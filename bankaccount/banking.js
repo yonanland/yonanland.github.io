@@ -36,14 +36,14 @@ window.onload= function(){
        
       accountInfoList[accountInfoList.length] = ac;
       showAccounts();
-      alert("Congratultion!! a new account has been created.");
+      // alert("Congratultion!! a new account has been created.");
   
     }
   
     function showAccounts(){
       var allAcc="";
       accountInfoList.forEach(function(item, index, array) {
-        allAcc+= "Account Name: "+ item["acctName"] + "   Balance: "+ item["acctDeposit"]+"\n";
+        allAcc+= "Account Name: "+ item["acctName"] + " ||   Balance: $"+ item["acctDeposit"]+".\n";
       })
     
       document.getElementById("txt").innerHTML= allAcc;
