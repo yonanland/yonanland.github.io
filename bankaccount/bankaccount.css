@@ -1,0 +1,42 @@
+
+
+body{
+    float: left;
+    background-image: url(image/background.png);
+}
+.fieldsett{
+    background-color: antiquewhite;
+    width: auto; 
+    height: auto;
+    border: 2px solid rgb(247, 207, 156);
+} 
+
+.lengedd{
+    color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    background-color: rgb(102, 207, 155);
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 45px;
+    border: 2px solid lightgreen;
+}
+
+.textareaa{
+   width: 600px; 
+   height: 500px;
+}
+
+.jumpTop{   
+    border: 2px solid rgb(156, 120, 120);
+    border-radius: 8px;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+   
+}
+
+.val{
+	text-align: center;
+    opacity: 65%;
+}

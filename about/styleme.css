@@ -43,6 +43,7 @@ body{
 
 .val{
 	text-align: center;
+    opacity: 65%;
 }
 
 /* .m1{
@@ -123,8 +124,7 @@ body{
 
   .jumpTop{   
     border: 2px solid rgb(156, 120, 120);
-      border-radius: 8px;
-      /* border-top-right-radius: 50px; */
+    border-radius: 8px;
     margin-top: 10px;
     text-decoration: none;
    }
