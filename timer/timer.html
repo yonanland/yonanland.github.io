@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="timerStule.css" type="text/css" rel="stylesheet" />
+
+    <title>Javascript Exercises</title>
+  </head>
+  <body>
+    <h1>Javascript Timer Exercises</h1>
+
+    <ol>
+      <div>
+        <li>
+          <dt>What is the differencebetween the following 2 statements?</dt>
+          <ul>
+            <li>SetTimeout(booyah, 2000);</li>
+            <span class="ans">
+              >>> Calles the function after the timer goes off after 2
+              seconds.</span
+            >
+            <li>SetTimeout(booyah(), 2000);</li>
+            <span class="ans">
+              >>> calles the function booyah immediately rather than waiting for
+              2 seconds</span
+            >
+            <br /><br />
+          </ul>
+        </li>
+      </div>
+
+      <div>
+        <li>
+          <dt>
+            What do the following 2 alerts display (answer without running the
+            code)?
+          </dt>
+          <pre>
+              var myfunc = function(a, x) {
+                return a * x;
+              };
+              var x = myfunc(2, 3);
+              var y = myfunc;
+              alert(x);
+              alert(y(2,3)); </pre
+          >
+          <p>
+            <span class="ans"> >>> Both of the alerts will display 6. </span>
+          </p>
+        </li>
+      </div>
+
+      <div>
+        <li>
+          <dt>
+            Write functions booyah1 and booyah2 so that in both cases below, an
+            alert box comes up after 2 seconds that says “BOOYAH!”
+          </dt>
+          <ul>
+            <div>
+              <li>SetTimeout(booyah, 2000);</li>
+              <pre class="ans">
+                function booyah1() {
+                  alert("BOOYAH");
+                }
+              </pre>
+            </div>
+            <div>
+              <li>SetTimeout(booyah(), 2000);</li>
+              <br />
+              <pre class="ans">
+                function booyah2() {
+                  setTimeout(booyah1,2000);
+                }
+               </pre
+              >
+            </div>
+          </ul>
+        </li>
+      </div>
+
+      <div>
+        <li>
+          <dt>
+            What is "Unobtrusive Javascript"? What is the practical application
+            of Unobtrusive Javascript (and the reasons for using it)?
+            <pre class="ans">
+              >>> Unobtrusive Javascript which also known as "unobtrusive DOM scripting"
+              is a way of writing Javascript code that follows best practices to ensure
+              that the code is usable, accessible, and degrades gracefully. It is also
+              important for maintaining the code in the long run.
+            </pre>
+          </dt>
+        </li>
+        <hr />
+      </div>
+    </ol>
+
+    <footer class="footBanner">
+      <div>
+        <a href="/index.html">
+          <img src="/timer/image/icon-home.svg" alt="icon home page"
+        /></a>
+      </div>
+      <br />
+      <br />
+      <div class="val">
+        <a
+          href="http://validator.w3.org/check/?url=https://yonanland.github.io/index"
+          target="_blank"
+        >
+          <img src="image/w3c-html.png" alt="HTML-w3c Validator image"
+        /></a>
+        <a
+          href="https://jigsaw.w3.org/css-validator/validator?uri=https://yonanland.github.io/index"
+          target="_blank"
+        >
+          <img src="image/w3c-css.png" alt="CSS-w3c Validator image" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
