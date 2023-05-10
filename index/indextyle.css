@@ -112,6 +112,12 @@ blockquote{
   border-radius: 8px;
   margin-top: 10px;
   margin-left: 20px;
-  
   text-decoration: none;
+ }
+
+ .iconWeb{
+  border: 2px solid rgb(156, 120, 120);
+  border-radius: 8px;
+  padding:1.5px;
+  width: 15px;
  }
