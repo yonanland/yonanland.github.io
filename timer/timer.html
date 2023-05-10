@@ -19,14 +19,16 @@
           <ul>
             <li>SetTimeout(booyah, 2000);</li>
             <span class="ans">
-              >>> Calles the function after the timer goes off after 2
-              seconds.</span
+              >>> Because we don't have the () after booyah, it calls the
+              function after "waiting" the timer goes off after 2 seconds.</span
             >
+            <br />
+            <br />
             <li>SetTimeout(booyah(), 2000);</li>
             <span class="ans">
-              >>> calles the function booyah immediately rather than waiting for
-              2 seconds</span
-            >
+              >>> Because we have the () after booyah, it calls the function
+              booyah immediately, rather than waiting for 2 seconds (2000ms)
+            </span>
             <br /><br />
           </ul>
         </li>
@@ -48,7 +50,9 @@
               alert(y(2,3)); </pre
           >
           <p>
-            <span class="ans"> >>> Both of the alerts will display 6. </span>
+            <span class="ans">
+              >>> In both cases the alerts will display 6.
+            </span>
           </p>
         </li>
       </div>
