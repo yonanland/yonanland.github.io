@@ -4,22 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="jQuery_quiz1.css" type="text/css" rel="stylesheet" />
+    <link href="jQuery_quiz2.css" type="text/css" rel="stylesheet" />
 
-    <title>jQuery Quiz 1</title>
+    <title>jQuery Quiz 2</title>
   </head>
   <body>
-    <h1>jQuery Quiz 1</h1>
+    <h1>jQuery Quiz 2</h1>
     <hr />
     <ol>
       <div>
         <li>
           <dt>
-            In jQuery terminology, what is the difference between the “jQuery
-            function” and the “jQuery object”?
+            Which, if any, of the following 3 code fragments are equivalent?
+            Explain why they are different, if they are. <br />
+            Explain why they can have different parameters and be equivalent, if
+            they are equivalent.
+            <pre>
+              
+              //code fragment 1
+                $("li").each(function(idx, e) { 
+                $(e).css(“color”, “yellow”); });
+              //code fragment 2
+                $("li").each(function() {
+                $(this).css(“color”, “yellow”); });
+              //code fragment 3
+                $("li").each(function(idx) {
+                $(this).css(“color”, “yellow”); });
+            </pre>
           </dt>
           <ul>
-            <p class="ans">ans for question 1</p>
+            <p class="ans">
+              All three of them are equivalent, because all of them tells that
+              the css operation is applied for every element of the list.
+            </p>
           </ul>
         </li>
       </div>
@@ -27,31 +44,59 @@
       <div>
         <li>
           <dt>
-            Write jQuery code to find all h1 elements that are children of a div
-            element and make their background color red. Sample HTML:
+            Write a jQuery expression to find all divs on a page that include an
+            unordered list in them, and make their text color be blue.
+            <pre class="given">
+              &lt;div&gt; no ul here &lt;/div&gt;
+              &lt;div&gt;
+                This does contain a ul.
+                &lt;ul&gt;
+                  &lt;li&gt; The first item &lt;/li&gt;
+                  &lt;li&gt; The second item &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/div&gt;
+              &lt;script&gt;
+
+              &lt;!—INSERT YOUR JQUERY CODE HERE - - &gt;
+
+              &lt;/script&gt;
+              &lt;/body&gt;
+
+            </pre>
           </dt>
-          <p class="ans">ans for question 2</p>
+          <pre class="ans">
+              $(document).ready(function(){
+                $("div”).has(“ul").css({"color": "blue"});
+              });
+            </pre
+          >
         </li>
       </div>
 
-      <li>
-        Use a jQuery method to insert the text "YES!" at the end of the &lt; p
-        &gt; element.
-        <pre class="given">
-            &lt;!DOCTYPE html&gt;
-            &lt;html&gt;
-            &lt;head&gt;
-            &lt;script&gt;
-            &lt;!- - INSERT YOUR JQUERY CODE HERE - -&gt;
-            &lt;/script&gt;
-            &lt;/head&gt;
-            &lt;body&gt;
-            &lt;p&gt; Is jQuery FUN or what? &lt;/p&gt;
-            &lt;/body&gt;
-            &lt;/html&gt;
-        </pre>
-        <p class="ans">ans for question 3</p>
-      </li>
+      <div>
+        <li>
+          Write jQuery code to append the following div element (and all of its
+          contents) dynamically to the body element
+          <pre class="given">
+              &lt;div&gt; &lt;h1&gt;JQuery Core &lt;/h1&gt; &lt;/div&gt;
+              HTML
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                  &lt;meta charset="utf-8"&gt;
+                  &lt;title&gt; JS Bin &lt;/title&gt;
+                &lt;/head&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+          </pre>
+
+          <pre class="ans">
+              $(document).ready(function(){
+                $(“body”).append(“&lt;div&gt; &lt;h1&gt; jQuery Core &lt;/h1&gt; &lt;/div&gt;”);
+              });
+          </pre>
+        </li>
+      </div>
     </ol>
 
     <footer class="footBanner">

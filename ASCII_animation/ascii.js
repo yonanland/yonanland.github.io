@@ -1,15 +1,17 @@
-(function(){
-
+(function()
+{
     "use strict"
 
-    window.onload = function(){
+    window.onload = function()
+    {
         document.getElementById("animationSelector").onchange = getAnimationPage;
         document.getElementById("sizeSelector").onchange = setAnimationSize;
         document.getElementById("startbtn").onclick = animationLooper;
         document.getElementById("stopbtn").onclick = animationStopper;
     };
 
-    function getAnimationPage(){
+    function getAnimationPage()
+    {
         let e = document.getElementById("animationSelector");
         let v = document.getElementById("board")
         if(e.value === "blank"){
@@ -24,11 +26,12 @@
             v.innerHTML = DIVE;
         }else if(e.value === "custom"){
             v.innerHTML = CUSTOM;
-            v.readOnly = "Selamawit";
+            v.readOnly = "Yonny";
         }
     }
 
-    function setAnimationSize(){
+    function setAnimationSize()
+    {
         let e = document.getElementById("sizeSelector");
         let v = document.getElementById("board");
         if(e.value === "t"){
@@ -49,7 +52,8 @@
     var x = null;
     var i;
 
-    function animationLooper(){
+    function animationLooper()
+    {
         let v = document.getElementById("board");
         let arr = v.innerHTML.split("=====");
         let s;
@@ -74,7 +78,8 @@
         }
     }
 
-    function animationStopper(){
+    function animationStopper()
+    {
         clearInterval(x);
         getAnimationPage();
         document.getElementById("startbtn").disabled = false;
