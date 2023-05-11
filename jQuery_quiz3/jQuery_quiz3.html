@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="jQuery_quiz3.css" type="text/css" rel="stylesheet" />
+
+    <title>jQuery Quiz 3</title>
+  </head>
+  <body>
+    <h1>jQuery Quiz 3</h1>
+    <hr />
+    <ol>
+      <div>
+        <li>
+          <dt>
+            Find the text in the first paragraph (stripping out the html), then
+            set the html of the last paragraph to show it is just text (the red
+            bold is gone).
+            <pre class="given">
+               
+              &lt;!DOCTYPE html&gt;
+                &lt;html lang="en"&gt;
+                  &lt;head&gt;
+                    &lt;meta charset="utf-8"&gt;
+                    &lt;title&gt; text demo &lt;/title&gt;
+                    &lt;style&gt;
+                      p {
+                      color: blue;
+                      margin: 8px;
+                      }
+                      span {
+                      color: red;
+                      }
+                    &lt;/style&gt;
+
+                    &lt;script src="http://code.jquery.com/jquery-1.9.1.js" &gt; 
+                    &lt;/script&gt;
+                  &lt;/head&gt;
+                        
+                  &lt;body&gt;
+                      &lt;p&gt; &lt;span&gt;Test &lt;/span&gt; Paragraph. &lt;/p&gt;
+                      &lt;p&gt; &lt;/p&gt;
+                    &lt;script&gt;
+
+                      &lt;!-- INSERT YOUR JQUERY CODE HERE --&gt;
+
+                    &lt;/script&gt;
+                  &lt;/body&gt;
+                &lt;/html&gt;
+                    
+            </pre>
+          </dt>
+          <ul>
+            <pre class="ans">
+              $(document).ready(function(){
+                var Text_p1 = $('p:first').text();
+                $('p:last').text(Text_p1); 
+                        --- (or) ---
+                $("p:last").text($("p:first").text() );
+              });
+            </pre>
+          </ul>
+        </li>
+      </div>
+
+      <div>
+        <li>
+          <dt>
+            Write jQuery code to create a red background for the level-2 list
+            items.
+            <pre class="given">
+              &lt;ul class="level-1"&gt; 
+                  &lt;class="item-i"&gt; I &lt;/li&gt;
+                  &lt;li class="item-ii"&gt;II
+                      &lt;ul class="level-2"&gt; 
+                          &lt;li class="item-a"&gt; A &lt;/li&gt; 
+                          &lt;li class="item-b"&gt; B
+                              &lt;ul class="level-3"&gt; 
+                                  &lt;li class="item-1"&gt; 1 &lt;/li&gt; 
+                                  &lt;li class="item-2"&gt; 2 &lt;/li&gt; 
+                                  &lt;li class="item-3"&gt; 3 &lt;/li&gt; 
+                              &lt;/ul&gt; 
+                          &lt;/li&gt; 
+                          &lt;li class="item-c">C &lt;/li&gt; 
+                      &lt;/ul&gt; 
+                  &lt;/li&gt; 
+                  &lt;li class="item-iii">III &lt;/li&gt; 
+              &lt;/ul&gt; 
+            </pre>
+          </dt>
+          <pre class="ans">
+              $(document).ready(function(){
+                $(".level-2 li").css({"background-color": "red"});
+              });
+            </pre
+          >
+        </li>
+      </div>
+
+      <div>
+        <li>
+          Write jQuery code to select the element that comes immediately before
+          item three and change its background color to blue
+          <pre class="given">
+              &lt;ul&gt; 
+                  &lt;li&gt; list item 1 &lt;/li&gt; 
+                  &lt;li&gt; list item 2 &lt;/li&gt; 
+                  &lt;li class="third-item"&gt; list item 3 &lt;/li&gt; 
+                  &lt;li&gt; list item 4 &lt;/li&gt; 
+                  &lt;li&gt; list item 5 &lt;/li&gt; 
+              &lt;/ul&gt; 
+          </pre>
+
+          <pre class="ans">
+            $(document).ready(function() {
+              $('.third-item').prev().css('background-color', 'blue');
+            });            
+          </pre>
+        </li>
+      </div>
+
+      <div>
+        <li>
+          Let us one additional requirement for the "Go Vegetarian" button of
+          the Webville Eatery Menu described in Chapter 4 of Head First jQuery:
+          <br />
+          "Turkey" in the ingredient list of any entree is replaced by "Mashed
+          Potatoes" in the vegetarian version. You may assume there is a class
+          <br />
+          "turkey" that identifies these items in the list. Describe the changes
+          to the Javascript (jQuery) code to implement this new requirement.
+
+          <pre class="ans">
+              $(document).ready(function(){
+                $(“. Turkey”).replaceWith( “&lt;li class=” mashed”&gt; &lt;em&gt; Portobello Mushroom &lt;/em&gt; &lt;li&gt;“)  
+              });          
+          </pre>
+        </li>
+      </div>
+
+      <div>
+        <li>
+          Write Javascript (jQuery) code to change the color of the parent and
+          grandparent list items of the span of text ("some text") in the
+          following to green.
+
+          <pre class="given">
+               
+            &lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+                &lt;head&gt;
+                  &lt;script&gt;
+                    $(document).ready(function(){
+
+                    &lt;!-- INSERT YOUR JQUERY CODE HERE --&gt;
+
+                    });
+                  &lt;/script&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+
+                  &lt;div class="ancestors"&gt; 
+                    &lt;div&gt; (great-grandparent)
+                      &lt;ul&gt; (grandparent)
+                        &lt;li&gt; (direct parent)
+                          &lt;/script&gt;
+                        &lt;/li&gt;
+                      &lt;/ul&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+
+                &lt;/body&gt;
+              &lt;/html&gt;                  
+          </pre>
+
+          <pre class="ans">
+              $(document).ready(function(){
+                $('span:contains("some text")').parent().css({ "color": "green" }); 
+                $('span:contains("some text")').parent().parent().css({"color": "green"});
+              });
+          </pre>
+        </li>
+      </div>
+    </ol>
+
+    <footer class="footBanner">
+      <div>
+        <hr class="hrr" />
+        <br />
+        <a href="/index.html">
+          <img src="image/icon-home.svg" alt="icon home page"
+        /></a>
+      </div>
+      <br />
+      <br />
+      <div class="val">
+        <a
+          href="http://validator.w3.org/check/?url=https://yonanland.github.io/index"
+          target="_blank"
+        >
+          <img src="image/w3c-html.png" alt="HTML-w3c Validator image"
+        /></a>
+        <a
+          href="https://jigsaw.w3.org/css-validator/validator?uri=https://yonanland.github.io/index"
+          target="_blank"
+        >
+          <img src="image/w3c-css.png" alt="CSS-w3c Validator image" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
