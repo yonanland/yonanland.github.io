@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="ascii.css" />
+    <script src="animation.js"></script>
+    <script src="ascii.css"></script>
+
+    <title>ASCII Animation</title>
+  </head>
+  <body>
+    <img id="heart" src="image/redFlowerHeart.jpg" alt="pic of a heart" />
+    <h1>CS472: ASCII Animation Viewer</h1>
+    <hr class="hrr" />
+    <textarea
+      class="textareaa"
+      name="board"
+      id="board"
+      cols="80"
+      rows="20"
+      readonly
+    ></textarea>
+
+    <div>
+      <fieldset class="controls">
+        <legend>Play Controls:</legend>
+        <button id="startbtn">Start</button>
+        <button id="stopbtn">Stop</button>
+      </fieldset>
+
+      <fieldset class="controls">
+        <legend>Animation:</legend>
+        <select name="animation" id="animationSelector">
+          <option value="blank">Blank</option>
+          <option value="exercise">Exercise</option>
+          <option value="juggler">Juggler</option>
+          <option value="bike">Bike</option>
+          <option value="dive">Dive</option>
+          <option value="custom">Custom</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="controls">
+        <legend>Size:</legend>
+        <select id="sizeSelector" name="size">
+          <option value="t">Tiny</option>
+          <option value="s">Small</option>
+          <option value="m" selected>Medium</option>
+          <option value="l">Large</option>
+          <option value="xl">Extra Large</option>
+          <option value="xxl">XXL</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="controls">
+        <legend>Speed:</legend>
+        <label><input id="turbo" type="checkbox" />Turbo</label>
+      </fieldset>
+      <br />
+      <br />
+    </div>
+
+    <footer class="footBanner">
+      <div>
+        <hr class="hrr" />
+        <br />
+        <a class="homePage" href="/index.html">
+          <img src="image/icon-home.svg" alt="Home Page"
+        /></a>
+        <br />
+        <a href="#" class="jumpTop"> Jump to Top</a>
+      </div>
+      <br />
+
+      <div class="val">
+        <a
+          href="http://validator.w3.org/check/?url=https://yonanland.github.io/index"
+          target="_blank"
+        >
+          <img src="image/w3c-html.png" alt="HTML-w3c Validator image"
+        /></a>
+        <a
+          href="https://jigsaw.w3.org/css-validator/validator?uri=https://yonanland.github.io/index"
+          target="_blank"
+        >
+          <img src="image/w3c-css.png" alt="CSS-w3c Validator image" />
+        </a>
+        <br /><br />
+      </div>
+
+      <div style="margin-top: auto"></div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+body{
+background-color: #CCCCFF;
+font: 14pt bold;
+font-family: sans-serif;
+text-align: center;
+}
+
+h1{
+margin-top: 30px;
+font-family: 'Courier New', Courier, monospace;
+font-size: 36pt;
+text-align: center;
+margin-bottom: -8px;
+}
+
+#heart{
+float: left;
+width: 8.5%;
+border: 2px groove rgb(0, 195, 255) ;
+
+}
+#board{
+width: 90%;
+height: 400px;
+margin: auto;
+font-family: monospace;
+font: 12pt bold;
+}
+
+#allControls{
+width: fit-content;
+margin: auto;
+}
+
+.textareaa{
+border: 3px groove rgb(0, 195, 255) ;
+}
+
+.controls{
+color: #11116e;
+border: 3px solid rgb(147, 148, 82);
+display: inline;
+}
+
+.val{ 
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    opacity: 0.7;
+  }
+
+.jumpTop{   
+border: 2px solid rgb(156, 120, 120);
+border-radius: 8px;
+margin-top: 10px;
+text-decoration: none;
+float: left;
+margin-left: -20px;
+padding-left: 6px;
+padding-right: 6px;
+}
+
+.homePage {
+float: left;
+color: rgb(118, 105, 203);
+text-decoration: none;
+margin-left:13px;
+
+}
+
+.footBanner{
+margin: -9px;
+background-color: rgb(185, 170, 104) ;
+}
+
+.hrr {
+border: 2px solid rgb(150, 108, 56);
+margin-left: -9px;
+margin-right: -9px;
+margin-bottom: 9px;
+}
