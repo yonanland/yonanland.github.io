@@ -1,15 +1,29 @@
-body{
-  background-image: url("image/background.png");
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
+html,body{
+  font-size: 62.5%;
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  background: url("image/background.png");
+  width: 98%;
+  height: 98%;
+  margin: auto;
+ }
 
 
 .profile {
-  width: 200px;
-  border-radius: 50%;
+  width: 20rem;
+  border-radius: 45rem;
   object-fit: cover;
-  margin-top: 55px;
-  margin-bottom: 55px;
-  margin-left: 15px;
+  margin-top: 5.5rem;
+  margin-bottom: 5.5rem;
+  margin-left: 1.5rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -22,7 +36,7 @@ body{
   position: relative;
   z-index: 1; /* set z-index to 1 so the banner appears above the body content */
   object-fit: cover;
-  border: 4px solid #a5b6c5;
+  border: .6rem solid #a5b6c5;
 }
 
 .banner::before {
@@ -42,11 +56,9 @@ body{
 
 .bulletLinks{
   text-decoration: none;
-  font-size: 15px;
+  font-size: 1.6rem;
   margin-top: 0%;
-  margin-left: 50px;
-
-  
+  margin-left: 5rem;  
 }
 
 .n{
@@ -55,69 +67,69 @@ body{
 
 .username {
   text-align: left;
-  font-size: 36pt;
+  font-size: 4.2rem;
   font-family: 'Bradley Hand ITC', Consolas;
   /* background-color: rgb(165, 173, 132); */
   color: #430dc9;
   text-decoration: none;
   display: inline-flex;
-  margin-top: 10px;
-  margin-bottom: 10px;
- 
+  margin-top: .8rem;
+  margin-bottom: .6rem; 
 }
 
 .end {
   color: rgb(118, 140, 165);
   font-family: "Lucida Sans Unicode", Tahoma, sans-serif;
   font-weight: bold;
-  font-size: 18pt;
-  letter-spacing: 0.22em;
-  margin-bottom: 1px;
+  font-size: 2rem;
+  letter-spacing: .4rem;
+  margin-bottom: .3rem;
 }
 
 .val{ 
   display: flex;
-  gap: 10px;
+  gap: 1rem;
   justify-content: center;
   opacity: 0.7;
 }
 
 h3{ 
 color: rgba(52, 77, 158, 0.884);
-font-size: 15pt;  
+font-size: 2rem;  
 font-weight: bold;
 }
 
 blockquote{
-  background-color: rgb(165, 173, 132);
+  background-color: rgb(199, 188, 128);
   display: inline-flex;
   font-style: italic;
   font-family: Cambria;
-  font-size: 18px;
+  font-size: 1.6rem;
+  border: .1rem rgb(141, 130, 130);
+  padding: .8rem;
 }
 .footBanner{
-  margin: -9px;
+  margin: -.9rem;
   background-color: rgb(185, 170, 104) ;
 }
 
 .hrr {
   border: 2px solid rgb(150, 108, 56);
-  margin-left: -9px;
-  margin-right: -9px;
-  margin-bottom: 9px;
+  margin-left: -.9rem;
+  margin-right: -.9rem;
+  margin-bottom: .9rem;
 }
 
 .labsItem{   
-  border: 2px solid rgb(156, 120, 120);
-  border-radius: 8px;
-  margin-top: 10px;
-  margin-left: 20px;
+  /* border: 2px solid rgb(156, 120, 120);
+  border-radius: 8px; */
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
   text-decoration: none;
  }
 
  .iconWeb{
-  border: 2px solid rgb(156, 120, 120);
-  border-radius: 8px;
-  padding:1.5px;
-  width: 15px;
+    width: 1.5rem;
+  font-size: 1rem;
  }
