@@ -1,6 +1,69 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" type="text/css" href="simple_calculator.css" />
+  </head>
+  <body>
+    <h2 id="header">Simple Calculator</h2>
+    <form action="/calculate" method="POST">
+      <legend><h3>Enter two numbers:</h3></legend>
+      <input type="text" name="num1" placeholder="1st number" required />
+      <input type="text" name="num2" placeholder="2nd number" required />
+      <br /><br />
+
+      <label>Select operation: </label>
+      <select name="operation">
+        <option value="add">Add</option>
+        <option value="subtract">Subtract</option>
+        <option value="multiply">Multiply</option>
+        <option value="divide">Divide</option>
+        <option value="divide">modules</option>
+      </select>
+      <br /><br />
+
+      <button class="operate" type="submit">Calculate</button>
+      <br /><br />
+      <br /><br />
+    </form>
+
+    <footer class="footBanner">
+      <div>
+        <br />
+        <a class="homePage" href="/index.html">
+          <img src="image/icon-home.svg" alt="Home Page"
+        /></a>
+      </div>
+      <br />
+
+      <div class="val">
+        <a
+          href="http://validator.w3.org/check/?url=https://yonanland.github.io/index"
+          target="_blank"
+        >
+          <img src="image/w3c-html.png" alt="HTML-w3c Validator image"
+        /></a>
+        <a
+          href="https://jigsaw.w3.org/css-validator/validator?uri=https://yonanland.github.io/index"
+          target="_blank"
+        >
+          <img src="image/w3c-css.png" alt="CSS-w3c Validator image" />
+        </a>
+        <br /><br />
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!-- 
+
+<!DOCTYPE html>
+<html>
+  <head>
     <title>Simple Calculator</title>
     <link rel="stylesheet" type="text/css" href="simple_calculator.css" />
   </head>
@@ -28,5 +91,35 @@
       />
       <button type="submit">Calculate</button>
     </form>
+
+    <footer class="footBanner">
+      <div>
+        <br />
+        <a class="homePage" href="/index.html">
+          <img src="image/icon-home.svg" alt="Home Page"
+        /></a>
+      </div>
+      <br />
+
+      <div class="val">
+        <a
+          href="http://validator.w3.org/check/?url=https://yonanland.github.io/index"
+          target="_blank"
+        >
+          <img src="image/w3c-html.png" alt="HTML-w3c Validator image"
+        /></a>
+        <a
+          href="https://jigsaw.w3.org/css-validator/validator?uri=https://yonanland.github.io/index"
+          target="_blank"
+        >
+          <img src="image/w3c-css.png" alt="CSS-w3c Validator image" />
+        </a>
+        <br /><br />
+      </div>
+
+      <div style="margin-top: auto"></div>
+    </footer>
   </body>
-</html>
+</html> 
+
+-->
