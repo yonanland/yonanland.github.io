@@ -1,40 +1,38 @@
-var http = require("http");
-var url = require("url");
-var fs = require("fs");
-var calcMod = require("./simple_calculatorMod");
+const express = require("express");
+const app = express();
+const port = 3000;
+app.use(express.urlencoded({ extended: false }));
+app.use(express.static("./public"));
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/simple_calculator.html");
+});
+app.post("/calculate", (req, res) => {
+  const num1 = parseInt(req.body.num1);
+  const num2 = parseInt(req.body.num2);
+  const operation = req.body.operation;
+  let result;
+  switch (operation) {
+    case "add":
+      result = num1 + num2;
+      break;
+    case "subtract":
+      result = num1 - num2;
+      break;
+    case "multiply":
+      result = num1 * num2;
+      break;
+    case "divide":
+      result = num1 / num2;
+    default:
+      result = "Invalid Operation";
+  }
+  res.send(`
+    <h1>The Answer is: ${result}</h1>
+    <a href="/">Another calculation</a>
+  `);
+});
 
-http
-  .createServer(function (req, res) {
-    var q = url.parse(req.url, true);
-    var qdata = q.query;
-    var filename = "." + q.pathname;
-    // this path to the local host
-    if (q.pathname == "/calculator.js") {
-      if (qdata.operation == "add") {
-        calcMod.add(req, res, q.query);
-        calcMod.displays(req, res, q.query);
-      } else if (qdata.operation == "subtract") {
-        calcMod.subtract(req, res, q.query);
-        calcMod.displays(req, res, q.query);
-      } else if (qdata.operation == "multiply") {
-        calcMod.multiply(req, res, q.query);
-        calcMod.displays(req, res, q.query);
-      } else if (qdata.operation == "division") {
-        calcMod.division(req, res, q.query);
-        calcMod.displays(req, res, q.query);
-      } else if (qdata.operation == "modules") {
-        calcMod.modules(req, res, q.query);
-        calcMod.displays(req, res, q.query);
-      }
-    } else
-      fs.readFile(filename, function (err, data) {
-        if (err) {
-          res.writeHead(404, { "Content-Type": "text/html" });
-          return res.end("404 Not Found");
-        }
-        res.writeHead(200, { "Content-Type": "text/css" }); // Content-Type not included
-        res.write(data);
-        return res.end();
-      });
-  })
-  .listen(8090);
+// Start the server
+app.listen(port, () => {
+  console.log(`Server started on port ${port}`);
+});
