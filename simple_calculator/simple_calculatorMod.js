@@ -30,7 +30,7 @@ exports.displays = function (req, res, vals) {
 
   res.write("</p>");
   res.write(
-    " <a href='https://yonanland.github.io/simple_calculator/simple_calculator.html'>To Perform another calculation <br/> Click me! </a> "
+    " <a href='https://yonanland.github.io/simple_calculator/simple_calculator.html'> Click here to calculate again! </a> "
   );
 
   res.write("</body>");
