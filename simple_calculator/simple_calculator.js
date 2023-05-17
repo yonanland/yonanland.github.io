@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 8080;
+const port = 5501;
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static("./public"));
 app.get("/", (req, res) => {
@@ -23,8 +23,10 @@ app.post("/calculate", (req, res) => {
       break;
     case "divide":
       result = num1 / num2;
+      break;
     case "modules":
       result = num1 % num2;
+      break;
     default:
       result = "Invalid Operation";
   }
