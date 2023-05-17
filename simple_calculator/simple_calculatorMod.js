@@ -29,10 +29,9 @@ exports.displays = function (req, res, vals) {
   res.write(String(result));
   res.write("</p>");
   res.write(
-    <div class="responder"> 
     <a href='https://yonanland.github.io/simple_calculator/simplecalculator.html'>
-      To Perform another calculation <br/> Click me! </a>"
-    </div>
+      To Perform another calculation <br/> Click me! </a>
+   
   );
 
 

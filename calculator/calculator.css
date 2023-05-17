@@ -1,0 +1,40 @@
+.main {
+    width: 40%;
+    margin: 15% auto;
+    color: rgb(110, 182, 244);
+    background-color: rgb(188, 238, 238);
+    border: 2px solid;
+    line-height: 40px;
+    border: 5px solid rgb(245, 209, 209);
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px rgb(222, 196, 196);
+}
+
+#form {
+    margin: 10%;
+}
+
+.optionselect {
+    font-size: large;
+}
+
+#selections {
+    margin-left: 5%;
+    font-weight: bold;
+    width: 30%;
+    height: 30px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: rgb(5, 5, 5);
+    margin-left: 15%;
+    text-shadow: 5px 5px 10px rgb(36, 33, 33);
+}
+
+#subbtn {
+    width: 150px;
+    height: 30px;
+}
+
