@@ -23,12 +23,12 @@ exports.displays = function (req, res, vals) {
   res.write("</head>");
   res.write("<body>");
   res.write(
-    '<p style="background-color: blue" ; style="font:14pt bolder";> The result is: '
+    '<p style="background-color: lightgray" ; style="font:2rem bolder";> The result is: '
   );
   res.write(String(result));
   res.write("</p>");
   res.write(
-    "<a href='https://github.com/yonanland/yonanland.github.io/tree/main/simple_calculator'>Another calculation</a>"
+    "<a href='https://github.com/yonanland/yonanland.github.io/tree/main/simplecalculator.html'>Another calculation</a>"
   );
   res.write("</body>");
   res.write("</html>");
