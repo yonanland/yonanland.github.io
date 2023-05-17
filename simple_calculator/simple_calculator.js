@@ -9,7 +9,7 @@ http
     var qdata = q.query;
     var filename = "." + q.pathname;
     // this path ?????
-    if (q.pathname == "/simplecalculator.js") {
+    if (q.pathname == "/simple_calculator.js") {
       if (qdata.operation == "add") {
         calcMod.add(req, res, q.query);
         calcMod.displays(req, res, q.query);
