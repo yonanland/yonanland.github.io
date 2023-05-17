@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 5501;
+const port = 8080;
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static("./public"));
 app.get("/", (req, res) => {

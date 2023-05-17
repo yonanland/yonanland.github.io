@@ -8,28 +8,33 @@
     <title>Simple Calculator</title>
     <link rel="stylesheet" type="text/css" href="simple_calculator.css" />
   </head>
-  <body>
-    <h2 id="header">Simple Calculator</h2>
-    <form action="/calculate" method="POST">
-      <legend><h3>Enter two numbers:</h3></legend>
-      <input type="text" name="num1" placeholder="1st number" required />
-      <input type="text" name="num2" placeholder="2nd number" required />
-      <br /><br />
+  <body class="all">
+    <!-- <h2 id="header">Simple Calculator</h2> -->
 
-      <label>Select operation: </label>
-      <select name="operation">
-        <option value="add">Add</option>
-        <option value="subtract">Subtract</option>
-        <option value="multiply">Multiply</option>
-        <option value="divide">Divide</option>
-        <option value="divide">modules</option>
-      </select>
-      <br /><br />
+    <fieldset class="fieldsett">
+      <legend class="lengedd">
+        <h2>Simple Calculator</h2>
+      </legend>
 
-      <button class="operate" type="submit">Calculate</button>
-      <br /><br />
-      <br /><br />
-    </form>
+      <form action="/calculate" method="POST">
+        <legend><h3>Enter two numbers:</h3></legend>
+        <input type="text" name="num1" placeholder="1st number" required />
+        <input type="text" name="num2" placeholder="2nd number" required />
+        <br /><br />
+        <label>Select operation: </label>
+        <select name="operation">
+          <option value="add">Add</option>
+          <option value="subtract">Subtract</option>
+          <option value="multiply">Multiply</option>
+          <option value="divide">Divide</option>
+          <option value="divide">modules</option>
+        </select>
+        <br /><br />
+        <button class="operate" type="submit">Calculate</button>
+        <br /><br />
+        <br /><br />
+      </form>
+    </fieldset>
 
     <footer class="footBanner">
       <div>
