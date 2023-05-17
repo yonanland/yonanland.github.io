@@ -28,18 +28,13 @@ exports.displays = function (req, res, vals) {
   );
   res.write(String(result));
   res.write("</p>");
-  res.write(
-    " <a href='https://yonanland.github.io/simple_calculator/simplecalculator.html'>To Perform another calculation <br/> Click me! </a> "
-  );
+  // res.write(
+  //   " <a href='https://yonanland.github.io/simple_calculator/simplecalculator.html'>To Perform another calculation <br/> Click me! </a> "
+  // );
 
-  /* {<div class="main" style="width: 40%;margin: 15% auto;color: rgb(110, 182, 244);background-color: rgb(188, 238, 238);border: 2px solid rgb(245, 209, 209);
-            line-height: 40px;border: 5px solid grey;border-radius: 5px;box-shadow: 10px 10px 5px rgb(222, 196, 196);">
-      <h1 style="color: rgb(5, 5, 5);margin-left: 15%;text-shadow: 5px 5px 10px rgb(36, 33, 33);">Simple Calculator</h1>
-      <div id="form" style="margin: 10%;">
-        <h1 class="res">The output is: ${output}</h1> <br>
-        <h2 class="back"><a href="http://localhost:8080/">Another calculation</a></h2>
-      </div>
-    </div> } */
+  res.write(
+    "<a href='https://yonanland.github.io/simple_calculator/simplecalculator.html'>Another calculation</a>"
+  );
 
   res.write("</body>");
   res.write("</html>");
