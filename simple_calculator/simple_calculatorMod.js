@@ -14,6 +14,7 @@ exports.division = function (req, res, vals) {
 exports.modules = function (req, res, vals) {
   result = parseInt(vals.first) % parseInt(vals.second);
 };
+
 exports.displays = function (req, res, vals) {
   res.writeHead(200, { "Content-Type": "text/html" });
   res.write("<!DOCTYPE html>");
@@ -28,7 +29,7 @@ exports.displays = function (req, res, vals) {
   res.write(String(result));
   res.write("</p>");
   res.write(
-    "<a href='https://yonanland.github.io/simple_calculator/simplecalculator.html'>To Perform another calculation</a>"
+    "<a style = text-decoration: none; href='https://yonanland.github.io/simple_calculator/simplecalculator.html'>To Perform another calculation <br/> Click me! </a>"
   );
   res.write("</body>");
   res.write("</html>");
