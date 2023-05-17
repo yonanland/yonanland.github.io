@@ -8,7 +8,7 @@ http
     var q = url.parse(req.url, true);
     var qdata = q.query;
     var filename = "." + q.pathname;
-    if (q.pathname == "/simple_calculator.js") {
+    if (q.pathname == "sim") {
       if (qdata.operation == "add") {
         simple_calculatormod.add(req, res, q.query);
         simple_calculatormod.displays(req, res, q.query);
@@ -37,3 +37,24 @@ http
       });
   })
   .listen(8090);
+
+exports.displays = function (req, res, vals) {
+  res.writeHead(200, { "Content-Type": "text/html" });
+  res.write("<!DOCTYPE html>");
+  res.write("<html>");
+  res.write('<head><meta charset="utf-8"/>');
+  res.write("<title>Calculator Web Site</title>");
+  res.write("</head>");
+  res.write("<body>");
+  res.write(
+    '<p style="background-color: lightgray" ; style="font:1.5rem bolder";> The output is: '
+  );
+  res.write(String(result));
+  res.write("</p>");
+  res.write(
+    "<a href='https://yonanland.github.io/simple_calculator/simplecalculator.html'>To Perform another calculation</a>"
+  );
+  res.write("</body>");
+  res.write("</html>");
+  return res.end();
+};
