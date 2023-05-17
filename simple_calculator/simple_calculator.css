@@ -70,7 +70,7 @@ font-size: 2.8rem;
 .homePage {
 color: rgb(118, 105, 203);
 text-decoration: none;
-margin: .1rem 70rem ;
+margin: .1rem 50rem ;
 }
 
 .footBanner{    
@@ -84,4 +84,8 @@ border: .3rem
 margin-left: -.9rem;
 margin-right: -.9rem;
 margin-bottom: .9rem;
+}
+
+.responder{
+    text-decoration: none;
 }
