@@ -7,7 +7,7 @@ http
     var q = url.parse(req.url, true);
     var qdata = q.query;
     var filename = "." + q.pathname;
-    if (q.pathname == "/cal.js") {
+    if (q.pathname == "/simple_calculator.js") {
       if (qdata.operation == "add") {
         simple_calculatormod.add(req, res, q.query);
         simple_calculatormod.displays(req, res, q.query);
