@@ -31,8 +31,8 @@ app.post("/calculate", (req, res) => {
       result = "Invalid Operation";
   }
   res.send(`
-    <h1>The Answer is: ${result}</h1>
-    <a href="/">Another calculation</a>
+    <h1>The output is: ${result}</h1>
+    <a href="/"> Click here to calculate again! </a>
   `);
 });
 
