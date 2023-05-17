@@ -8,8 +8,8 @@ http
     var q = url.parse(req.url, true);
     var qdata = q.query;
     var filename = "." + q.pathname;
-    // this path ?????
-    if (q.pathname == "/simple_calculator.js") {
+    // this path to the local host
+    if (q.pathname == "/calculator.js") {
       if (qdata.operation == "add") {
         calcMod.add(req, res, q.query);
         calcMod.displays(req, res, q.query);
