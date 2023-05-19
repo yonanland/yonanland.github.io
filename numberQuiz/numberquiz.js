@@ -81,8 +81,8 @@ function displayQuestion(req, res, list, score, hidden) {
   res.write('<head><meta charset="utf-8"/>');
   res.write("<title>Quiz Game</title>");
   res.write("</head>");
-  res.write("<body>");
-  res.write('<form action="http://localhost:8085/">');
+  res.write("<body style='background-image: url(images/background.png);'>");
+  res.write('<form action="http://localhost:8080/">');
   res.write("<label name=quiznumber>");
   res.write(`<input type="hidden" name="quiznumber" value=${hidden} />`);
   res.write("<div>");
@@ -118,9 +118,9 @@ function displayfnalMesg(req, res, score, ans) {
   res.write("</h1>");
   res.write("<p>your current score is</p>");
   res.write(`${score}`);
-  res.write("<p> You have completed the Number Quiz, with a score of ");
+  res.write("<p> You have completed the Number Quiz, with a score of: ");
   res.write(`${score}`);
-  res.write("out of ");
+  res.write(" out of ");
   res.write(`${ans}`);
   res.write("</p>");
   res.write("<a href='startquiz.html'>Start over</a>");
