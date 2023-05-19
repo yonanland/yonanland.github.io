@@ -34,8 +34,8 @@ $(document).ready(function () {
 
   var images = [
     "url('images/background.jpg')",
-    "url('images/background2.jpeg')",
-    "url('images/background3.jpg')",
+    "url('images/background1.jpg')",
+    "url('images/background2.jpg')",
   ];
   var index = 0;
   $("#changeImage").click(function () {
