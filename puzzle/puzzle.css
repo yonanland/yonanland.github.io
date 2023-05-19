@@ -49,11 +49,15 @@ background-color: #bfb;
 background-color: #f88;
 }
 
+.howFast{
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+
 .homePage {
     color: rgb(118, 105, 203);
     text-decoration: none;
-    width: 50%;
-   
  }
 
 .val{
