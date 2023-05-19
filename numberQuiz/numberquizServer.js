@@ -1,7 +1,7 @@
-var http = require("http");
+const http = require("http");
 const { URL } = require("url");
-var fs = require("fs");
-var output = require("./numberquiz.js");
+const fs = require("fs");
+const output = require("./numberquiz.js");
 http
   .createServer(function (req, res) {
     var q = new URL(req.url, "https://localhost:8080/");
