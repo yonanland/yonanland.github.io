@@ -15,9 +15,6 @@ width: auto;
 height: auto;
 }
 
-
-
-
 .buttonn {
 background-color: rgb(180, 170, 115);
 border: .2rem solid rebeccapurple;
@@ -26,6 +23,7 @@ height: 40px;
 margin-left: 30rem;
 font-size: x-large;
 }
+
 .header {
 color: antiquewhite;
 font-family: "Arial Narrow Bold", sans-serif, 'Courier New', Courier, monospace;
