@@ -19,10 +19,12 @@ function getPicture() {
 }
 
 function showPicture(data) {
+  console.log("Picture: found");
   $("#pic").attr("src", data.url);
   $("#title").text(data.title);
 }
 
 function noPicture(error) {
+  console.log("Picture: not found");
   alert(error.responseText);
 }
