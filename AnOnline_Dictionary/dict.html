@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Wap online dictionary</title>
     <meta charset="utf-8" />
-    <link href="dict.css" type="text/css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Wap online dictionary</title>
+    <link href="dict.css" type="text/css" rel="stylesheet" />
   </head>
 
   <body>
@@ -15,27 +16,46 @@
     <div>
       <section>
         <form autocomplete="off">
+          <input type="text" name="searchKey" id="searchKey" required /> <br />
           <input type="button" value="Look up" id="submit" />
-          <input type="text" name="searchKey" id="searchKey" required />
         </form>
       </section>
     </div>
 
-    <div id="searchresult"></div>
+    <div class="search" id="searchresult"></div>
+    <br /><br />
+    <hr class="hrr" />
 
-    <div class="validators">
-      <a href="https://validator.w3.org/"
-        ><img src="./images/w3c-html.png" alt="Valid XHTML 1.1"
-      /></a>
-      <a href="http://jigsaw.w3.org"
-        ><img src="./images/vcss.gif" alt="Valid CSS"
-      /></a>
-      <a href="https://www.w3schools.com/"
-        ><img src="./images/jslint.png" alt="JavaScript Lint"
-      /></a>
-    </div>
+    <footer class="footBanner">
+      <br /><br />
+      <div>
+        <br />
+        <a class="homePage" href="/index.html">
+          <img src="images/icon-home.svg" alt="Home Page"
+        /></a>
+      </div>
+      <br />
+      <!-- <a href="#" class="jumpTop">| Jump to Top</a> -->
+      <div class="val">
+        <a
+          href="http://validator.w3.org/check/?url=https://yonanland.github.io/index"
+          target="_blank"
+        >
+          <img src="images/w3c-html.png" alt="HTML-w3c Validator image"
+        /></a>
+        <a
+          href="https://jigsaw.w3.org/css-validator/validator?uri=https://yonanland.github.io/index"
+          target="_blank"
+        >
+          <img src="images/w3c-css.png" alt="CSS-w3c Validator image" />
+        </a>
+        <br /><br />
+      </div>
+
+      <div style="margin-top: auto"></div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./dict.js"></script>
+    <script src="dict.js"></script>
   </body>
 </html>

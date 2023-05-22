@@ -1,148 +1,147 @@
 .relaxedLion{
-    width: 180px;
-    border-radius: 10%;
-    object-fit: cover;
+width: 180px;
+border-radius: 10%;
+object-fit: cover;
 
 }
 .AlertfullTiger{
-    width: 220px;
-    border-radius: 10%;
-    object-fit: cover;      
-    
+width: 220px;
+border-radius: 10%;
+object-fit: cover;      
+
 
 }
 body{
-    background-image: url("image/background.png")
+background-image: url("image/background.png")
 }
 
 .pady{    
-    padding: 1px 5px 1px 20px;
-    border: 2px dashed blue;
-    margin-left: 20px;
-    margin-right: auto;
-    width: 80%
+padding: 1px 5px 1px 20px;
+border: 2px dashed blue;
+margin-left: 20px;
+margin-right: auto;
+width: 80%
 
 }
 
 .images{
-    display: flex;
-    gap: 10px;
-   /* justify-content: center; */
+display: flex;
+gap: 10px;
+/* justify-content: center; */
 }
 
 .info{
-    display: flex;
-    flex-direction: column;
-    
+display: flex;
+flex-direction: column;
+
 }
 
 .homePage {
-    color: rgb(118, 105, 203);
-    text-decoration: none;
- }
+color: rgb(118, 105, 203);
+text-decoration: none;
+}
 
 .val{
-	text-align: center;
-    opacity: 65%;
+text-align: center;
+opacity: 65%;
 }
 
 /* .m1{
-    color: rgb(233, 218, 17);
+color: rgb(233, 218, 17);
 
 } */
 
 .title1{
-    text-align: center;
-    color: rgb(64, 165, 196);
-    font-size: 40px;
-    font-family: 'Trebuchet MS'; 
-    font: italic;
-    margin-bottom: auto;
+text-align: center;
+color: rgb(64, 165, 196);
+font-size: 40px;
+font-family: 'Trebuchet MS'; 
+font: italic;
+margin-bottom: auto;
 }
 .title1:hover {
-    color: rgb(0, 128, 0);
+color: rgb(0, 128, 0);
 }
 
 .imdbs{
-    /* color: rgba(35, 50, 50, 0.644); */
-    background-color: rgba(219, 235, 126, 0.644);
-    font-size: 7px;
-    font-family: Nyala, sans-serif;
+/* color: rgba(35, 50, 50, 0.644); */
+background-color: rgba(219, 235, 126, 0.644);
+font-size: 7px;
+font-family: Nyala, sans-serif;
 }
 
 .title2{
-    color: rgb(74, 3, 112);
-    font-size: 25px;
-    font-family: 'Gill Sans', 'Gill Sans MT';
-    
+color: rgb(74, 3, 112);
+font-size: 25px;
+font-family: 'Gill Sans', 'Gill Sans MT';
+
 }
 
 .tcolor1{
-    color: rgb(85, 2, 94);
-    font-size: 15px;
-    font-family: "Tahoma";
+color: rgb(85, 2, 94);
+font-size: 15px;
+font-family: "Tahoma";
 }
 .bio{
-    color: #014101;
-    word-spacing: 2px;
-    font-family: 'Arial Narrow Bold';
-    font-size: 16px;
+color: #014101;
+word-spacing: 2px;
+font-family: 'Arial Narrow Bold';
+font-size: 16px;
 }
 
 .note {
-    color: rgb(1, 103, 69);
-    word-spacing: 2px;
-    font-family: 'Arial Narrow Bold';
-    font-size: 14px;
-  }
+color: rgb(1, 103, 69);
+word-spacing: 2px;
+font-family: 'Arial Narrow Bold';
+font-size: 14px;
+}
 
 
 .modeColor{
-    color: rgb(1, 103, 69);
-    font-size: 15px;
-    font-family: "Tahoma";
+color: rgb(1, 103, 69);
+font-size: 15px;
+font-family: "Tahoma";
 }
 
 .points{
-    color: rgb(0, 0, 0);
-    font-size:15px;
-    font-family: Calibri, 'Trebuchet MS', sans-serif;
-    font:2em;
+color: rgb(0, 0, 0);
+font-size:15px;
+font-family: Calibri, 'Trebuchet MS', sans-serif;
+font:2em;
 }
 
- p:first-letter {
-    font-size: 3em;
-    font-family: 'Trebuchet MS'; 
-    margin-top: -.32em;
-    padding: 2px;
-    margin-right: 4px;
-  }
-  
-  .bulletStyle{
-    list-style-type: square;
-  }
+p:first-letter {
+font-size: 3em;
+font-family: 'Trebuchet MS'; 
+margin-top: -.32em;
+padding: 2px;
+margin-right: 4px;
+}
 
-  .jumpTop{   
-    border: 2px solid rgb(156, 120, 120);
-    border-radius: 8px;
-    margin-top: 10px;
-    text-decoration: none;
-   }
+.bulletStyle{
+list-style-type: square;
+}
 
-   .footBanner{
-    margin: -9px;
-    background-color: rgb(185, 170, 104) ;
-  }
-  
-  .hrr {
-    border: 2px solid rgb(150, 108, 56);
-    margin-left: -9px;
-    margin-right: -9px;
-    margin-bottom: 9px;
-  }
+.jumpTop{   
+border: 2px solid rgb(156, 120, 120);
+border-radius: 8px;
+margin-top: 10px;
+text-decoration: none;
+}
 
-   
-  
+.footBanner{
+margin: -9px;
+background-color: rgb(185, 170, 104) ;
+}
+
+.hrr {
+border: 2px solid rgb(150, 108, 56);
+margin-left: -9px;
+margin-right: -9px;
+margin-bottom: 9px;
+}
 
 
- 
+
+
+
