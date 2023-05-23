@@ -2,7 +2,7 @@ $(document).ready(function () {
   $("#submit").click(function () {
     $.ajax({
       method: "POST",
-      url: "http://localhost:9009/search",
+      url: "http://localhost:8080/search",
       data: JSON.stringify({
         searchTerm: document.getElementById("searchKey").value,
       }),

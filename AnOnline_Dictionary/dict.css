@@ -60,7 +60,7 @@ box-shadow: .3rem .3rem .3rem rgba(245, 9, 9, 0.06);
 padding: 1rem;
 }
 
-.banner {
+.header {
 /* background-color: #b0d4f2; */
 box-shadow: .3rem .3rem .3rem rgba(245, 9, 9, 0.06);
 padding: .2rem;
@@ -88,6 +88,7 @@ margin-top:1rem;
 
 .search{
 margin-bottom:50rem;
+color:rgb(11, 10, 10)
 }
 
 .homePage {
