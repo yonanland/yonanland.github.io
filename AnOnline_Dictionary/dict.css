@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 html,body{
 font-size: 62.5%;
 }
@@ -18,7 +22,7 @@ min-height:30rem;
 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 font-size: 1.8rem;
 line-height: 1.5rem;
-box-shadow: 4.3rem 3.3rem 2.3rem rgba(72, 60, 105, 0.2);
+box-shadow: 2.3rem 3.3rem 2.3rem rgba(42, 28, 80, 0.2);
 background-color: rgb(243, 204, 95);
 border: .3rem solid rgb(187, 155, 11);
 }
@@ -39,19 +43,19 @@ font-size: 18px;
 box-shadow: none;
 border-radius: 10px;
 }
+
 input[type="text"]:focus {
 outline: none;
 }
-h1, h2{
+
+#header {
+box-shadow: .3rem .5rem .3rem rgba(84, 78, 168, 0.06);
 color: rgb(180, 152, 25);
 font-family: monospace;
-font-size: 5rem;
-/* border: .3rem solid rgb(228, 225, 93); */
-text-shadow: .3rem .3rem .3rem rgb(63, 99, 99);;
-font-weight: 600;
+font-size: 2.3rem;
+text-shadow: .3rem .3rem .3rem rgb(58, 110, 110);
 line-height: 7rem;   
 text-align: center;
-border-radius: 4.5rem;
 }
 
 section {
@@ -60,41 +64,45 @@ box-shadow: .3rem .3rem .3rem rgba(245, 9, 9, 0.06);
 padding: 1rem;
 }
 
-.header {
-/* background-color: #b0d4f2; */
-box-shadow: .3rem .3rem .3rem rgba(245, 9, 9, 0.06);
-padding: .2rem;
+.searchArea{
+margin-left: 1rem;
+font-family: consola;
 }
 
-#submit{
+#to_submit{
 background-color: rgb(202, 233, 140);
-padding: .5rem 1rem;
-margin: .05rem 20rem .1rem;
+padding: .02rem 1rem;
+margin: -2rem 33.5rem 1rem;
 border-radius: 1rem;
-font-family: 'Helvetica', cursive;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 font-size: 1.8rem;
-color: rgb(22, 8, 8);
+font-style: italic;
+color: rgb(3, 109, 141);
 text-decoration: none;	
 outline: none;
 opacity: 65%;
 
 }
 
-#searchKey{
-width: auto;
-height: 2.4rem;
-margin-top:1rem;
+#input{
+width: 40rem;
+height: 2.5rem;
+margin: 2rem 1rem -2rem;
+padding: 1.3rem;
+font-size: 1.8rem;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: rgb(204, 141, 4);
 }
 
-.search{
-margin-bottom:50rem;
+#output{
+margin-bottom:25rem;
 color:rgb(11, 10, 10)
 }
 
 .homePage {
-    text-decoration: none;
-    margin-left:.5rem ;
-    opacity: 65%;
+text-decoration: none;
+margin-left:.5rem ;
+opacity: 65%;
  }
 
 .footBanner{

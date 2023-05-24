@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/AnOnline_Dictionary/dict.css" />
 
-    <title>Wap online dictionary</title>
-    <link href="dict.css" type="text/css" rel="stylesheet" />
+    <title>Online Dictionary</title>
   </head>
-
   <body>
-    <div class="header">
-      <h1>WAP Online Dictionary</h1>
-    </div>
+    <header id="header">
+      <h1>Online Dictionary</h1>
+    </header>
 
-    <div>
-      <section>
-        <form autocomplete="off">
-          <input type="text" name="searchKey" id="searchKey" required /> <br />
-          <input type="button" value="Search" id="submit" />
-        </form>
-      </section>
-    </div>
+    <main>
+      <div class="searchArea">
+        <label for="input">What word do you want to look up?</label>
+        <input type="text" id="input" placeholder="Search for a word" />
+        <input type="submit" id="to_submit" value="Search" />
+      </div>
 
-    <div class="search" id="searchresult"></div>
-    <br /><br />
+      <div>
+        <ol id="output"></ol>
+      </div>
+    </main>
     <hr class="hrr" />
 
     <footer class="footBanner">
@@ -35,7 +35,6 @@
         /></a>
       </div>
       <br />
-      <!-- <a href="#" class="jumpTop">| Jump to Top</a> -->
       <div class="val">
         <a
           href="http://validator.w3.org/check/?url=https://yonanland.github.io/index"
@@ -49,13 +48,20 @@
         >
           <img src="images/w3c-css.png" alt="CSS-w3c Validator image" />
         </a>
+        <a
+          href="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"
+          target="_blank"
+        >
+          <img src="images/w3c-js.png" alt="js - Validator" />
+        </a>
+        <br /><br />
         <br /><br />
       </div>
 
       <div style="margin-top: auto"></div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="dict.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="/AnOnline_Dictionary/dict.js"></script>
   </body>
 </html>
