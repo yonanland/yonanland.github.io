@@ -23,7 +23,7 @@ function print_Result(data) {
     listElement.innerHTML +=
       '<span class="wordtype">(' +
       item.wordtype +
-      ")</span>::" +
+      ")</span> :: " +
       item.definition;
     listdata.appendChild(listElement);
   }
