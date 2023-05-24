@@ -58,10 +58,10 @@ line-height: 7rem;
 text-align: center;
 }
 
-section {
-/* background-color: #dfdd6c; */
-box-shadow: .3rem .3rem .3rem rgba(245, 9, 9, 0.06);
-padding: 1rem;
+.logo {
+border-radius: 1rem;
+margin: -2rem .05rem -2rem;
+width: 10rem;
 }
 
 .searchArea{
