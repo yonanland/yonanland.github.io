@@ -4,7 +4,7 @@ $(function () {
 
   to_submit.click(function () {
     const word = input.val();
-    console.log(word);
+    console.log("Entered word is", word);
     fetch(`http://localhost:8080/word?word=${word}`)
       .then((resp) => resp.json())
       .then(print_Result)
@@ -21,7 +21,10 @@ function print_Result(data) {
   for (const item of data) {
     const listElement = document.createElement("li");
     listElement.innerHTML +=
-      '<span class="wordtype">' + item.wordtype + "</span>::" + item.definition;
+      '<span class="wordtype">(' +
+      item.wordtype +
+      ")</span>::" +
+      item.definition;
     listdata.appendChild(listElement);
   }
 }

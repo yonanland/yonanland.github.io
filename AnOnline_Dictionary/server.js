@@ -6,9 +6,10 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
+
 app.get("/word", function (req, res) {
   const word = req.query.word;
-  console.log("calling server..." + word);
+  console.log("calling server by sending the word: " + word);
   conn.connect(function (err) {
     if (err) console.log(err.message);
     console.log("connected");
@@ -30,6 +31,6 @@ const conn = mysql.createConnection({
   database: "entries",
 });
 
-app.listen(8080, () => {
-  console.log("server running on http://localhost:8080");
-});
+app.listen(8080, () =>
+  console.log("server running on poert 8080(http://localhost:8080)")
+);
